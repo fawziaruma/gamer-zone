@@ -46,7 +46,7 @@ body{
    font-size: 95px;
    font-weight: 800;
   }
-  .banner-icon{
+  .info{
     color: #534C64;
     font-size: 20px;
     font-weight: 500;
@@ -89,6 +89,44 @@ body{
   font-size: 18px;
   font-weight: 400;
   line-height: 30px;
+  margin-top: -30px;
+}
+.game-cards{
+ display: flex;
+ justify-content: center;
+ gap: 10px;
+ margin: 50px 140px;
+ 
+  
+}
+.game-card img{
+  position: relative; 
+  width: 310px;
+  height: 380px;
+  border-radius: 16px;
+}
+.game-icon{
+  position: absolute;
+  bottom: -600px; 
+  right: 270px;
+}
+.game-icon .fa-solid{
+  color: #FFF;
+  width: 48px;
+  height: 48px;
+}
+.game-icon p{
+  font-size: 20px;
+  font-weight: 600;
+  background: var(--Linear, linear-gradient(90deg, #FF42A5 13.13%, #FF42A5 87.94%));
+background-clip: text;
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+padding: 5px 10px;
+}
+.game-card p{
+  width: 270px;
+  
 }
 
 
@@ -97,8 +135,9 @@ body{
 
 
 
-@media screen and (max-width:576px){
-  .banner{
-    flex-direction: column-reverse;
+@media screen and (width:576px) {
+  .game-cards{
+    flex-direction: column;
   }
+  
 }
