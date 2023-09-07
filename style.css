@@ -1,10 +1,34 @@
 body{
    font-family: 'Work Sans', sans-serif;
 }
+.left{
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-left: 140px;
+}
+.left img{
+  width: 86px;
+  height: 40px;
+}
+.right img{
+  margin-right: 10px;
+  width: 33px;
+  height: 24px;
+  color: #F61C0D;
+}
+.right{
+  display: flex;
+  width: 262px;
+  height: 56px;
+  border-radius: 8px;
+  background: rgba(11, 2, 35, 0.10);
+}
   nav{
     display: flex;
     justify-content: space-between;
     align-items: center;
+    margin-right: 140px;
   }
   nav > ul{
     display: flex;
@@ -198,7 +222,69 @@ padding: 5px 10px;
   font-size: 20px;
   font-weight: 600;
 }
+/* ........footer........ */
+footer{
+  width: 100%;
+  height: 620px;
+  background: #0B0223;
+}
+.gamer{
+  display: flex;
+  justify-content: center;
+  padding-top: 50px;
+  align-items: center;
+  gap: 10px;
+  color: white;
+}
+.gamer img{
+  width: 86px;
+  height: 40px;
+}
+.gamer h4{
+  font-size: 45px;
+  font-weight: 700;
+}
+.gamer-info{
+  background: linear-gradient(90deg, #FF42A5 13.13%, #FF42A5 87.94%);
+background-clip: text;
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+}
+.footer-content{
+  display: flex;
+  color: #FFF;
+  justify-content: center;
+  gap: 25px;
+  font-size: 18px;
+  font-weight: 600;
+  margin-top: -40px;
+}
+.footer-icon{
+  color: white;
+  text-align: center;
+  margin-top: 20px;
+}
+.fa-brands{
+  padding: 0px 10px;
 
+}
+.footer-info{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: rgba(255, 255, 255, 0.60);
+  font-size: 16px;
+  gap: 17px;
+  margin-top: 30px;
+  font-weight: 500;
+}
+.copyright{
+  color: rgba(255, 255, 255, 0.60);
+  text-align: center;
+  font-size: 14px;
+  font-weight: 500;
+
+}
 
 
 
