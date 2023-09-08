@@ -15,12 +15,14 @@ body{
   margin-right: 10px;
   width: 33px;
   height: 24px;
-  color: #F61C0D;
 }
+
 .right{
   display: flex;
-  width: 262px;
-  height: 56px;
+  justify-content: center;
+  padding: 7px 7px;
+  width: 256px;
+  height: 33px;
   border-radius: 8px;
   background: rgba(11, 2, 35, 0.10);
 }
@@ -129,25 +131,7 @@ body{
   height: 380px;
   border-radius: 16px;
 }
-.game-icon{
-  position: absolute;
-  bottom: -600px; 
-  right: 270px;
-}
-.game-icon .fa-solid{
-  color: #FFF;
-  width: 48px;
-  height: 48px;
-}
-.game-icon p{
-  font-size: 20px;
-  font-weight: 600;
-  background: var(--Linear, linear-gradient(90deg, #FF42A5 13.13%, #FF42A5 87.94%));
-background-clip: text;
--webkit-background-clip: text;
--webkit-text-fill-color: transparent;
-padding: 5px 10px;
-}
+
 .game-card p{
   width: 270px;
   
@@ -194,9 +178,13 @@ padding: 5px 10px;
   font-weight: 400;
   line-height: 30px;
 }
+/* ......careers.... */
+.careers{
+  fill: rgba(255, 255, 255, 0.10);
+}
 /* .....cards section..... */
 .cards{
-  margin: 50px 130px;
+  margin: 50px 120px;
   display: grid;
   grid-template-columns: repeat(5, 1fr);
   row-gap: 20px;
@@ -278,7 +266,7 @@ background-clip: text;
   margin-top: 30px;
   font-weight: 500;
 }
-.copyright{
+.copy{
   color: rgba(255, 255, 255, 0.60);
   text-align: center;
   font-size: 14px;
@@ -294,12 +282,48 @@ background-clip: text;
 
 
 
-@media screen and (width:576px) {
-  .game-cards{
-    flex-direction: column;
-  }
-  .cards{
-    grid-template-columns: 1fr;
-  }
-  
-}
+@media screen and (max-width: 768px) {
+
+
+    
+          /* Media query for smaller screens (navbar ., mobile devices) */
+
+          header nav, .game-cards, .no-download {
+            flex-direction: column;
+            text-align: center;
+        }
+
+        header ul {
+            margin-top: 10px;
+        }
+
+        header .right {
+            margin-top: 10px;
+        }
+
+
+
+            .banner {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            .banner-content {
+                margin-bottom: 20px;
+            }
+
+            .banner-title {
+                font-size: 28px;
+            }
+
+            .info {
+                font-size: 16px;
+            }
+
+            .btn-primary {
+                font-size: 16px;
+            }
+            .cards{
+              grid-template-columns: 1fr;
+            }
+        }
